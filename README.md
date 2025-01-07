@@ -92,3 +92,10 @@ The goal is to create a system that can:
    cd securin_assessment
 
 ## Screenshots
+
+![Screenshot 2025-01-07 235541](https://github.com/user-attachments/assets/f901b89f-62a6-471a-aae6-5314f1a250c3)
+![Screenshot 2025-01-07 235915](https://github.com/user-attachments/assets/ed835e26-2fdb-4058-9976-b1ce03d613a5)
+![Screenshot 2025-01-07 235937](https://github.com/user-attachments/assets/9340639e-f48b-47b4-bcfa-c20b82188161)
+![Screenshot 2025-01-08 000016](https://github.com/user-attachments/assets/dceebae8-c9e5-47dc-ac87-c9ddd344e5e4)
+![Screenshot 2025-01-08 000048](https://github.com/user-attachments/assets/68b25530-a529-44ad-99b0-6c92791fc349)
+![Screenshot 2025-01-08 000143](https://github.com/user-attachments/assets/0fc71111-69da-44f2-bdd0-592c587221dd)
