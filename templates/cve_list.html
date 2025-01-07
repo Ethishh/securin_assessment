@@ -1,0 +1,50 @@
+{% extends "layout.html" %}
+
+{% block title %}CVE List{% endblock %}
+
+{% block content %}
+    <h1>CVE List</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>CVE ID</th>
+                <th>Published Date</th>
+                <th>Last Modified Date</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for cve in cve_data %}
+                <tr>
+                    <td><a href="{{ url_for('cve_details', cve_id=cve.cve_id) }}">{{ cve.cve_id }}</a></td>
+                    <td>{{ cve.published_date }}</td>
+                    <td>{{ cve.last_modified_date }}</td>
+                    <td>{{ cve.vulnerability_status }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <div>
+        <form method="get" action="{{ url_for('cve_list') }}">
+            <label for="results_per_page">Results per page:</label>
+            <select name="results_per_page" id="results_per_page" onchange="this.form.submit()">
+                <option value="10" {% if results_per_page == 10 %}selected{% endif %}>10</option>
+                <option value="20" {% if results_per_page == 20 %}selected{% endif %}>20</option>
+                <option value="50" {% if results_per_page == 50 %}selected{% endif %}>50</option>
+            </select>
+        </form>
+    </div>
+
+    <div>
+        <ul>
+            {% if page > 1 %}
+                <li><a href="{{ url_for('cve_list', page=page-1, results_per_page=results_per_page) }}">Previous</a></li>
+            {% endif %}
+            <li>Page {{ page }} of {{ total_pages }}</li>
+            {% if page < total_pages %}
+                <li><a href="{{ url_for('cve_list', page=page+1, results_per_page=results_per_page) }}">Next</a></li>
+            {% endif %}
+        </ul>
+    </div>
+{% endblock %}

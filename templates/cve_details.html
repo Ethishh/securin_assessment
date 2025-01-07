@@ -1,0 +1,45 @@
+{% extends "layout.html" %}
+
+{% block title %}CVE Details{% endblock %}
+
+{% block content %}
+    <h1>CVE Details: {{ cve.cve_id }}</h1>
+    <table border="1">
+        <tr>
+            <th>Identifier</th>
+            <td>{{ cve.cve_id }}</td>
+        </tr>
+        <tr>
+            <th>Description</th>
+            <td>{{ cve.description }}</td>
+        </tr>
+        <tr>
+            <th>Published Date</th>
+            <td>{{ cve.published_date }}</td>
+        </tr>
+        <tr>
+            <th>Last Modified Date</th>
+            <td>{{ cve.last_modified_date }}</td>
+        </tr>
+        <tr>
+            <th>Vulnerability Status</th>
+            <td>{{ cve.vulnerability_status }}</td>
+        </tr>
+        <tr>
+            <th>CVSS Score</th>
+            <td>{{ cve.cvss_score }}</td>
+        </tr>
+        <tr>
+            <th>CVSS Vector</th>
+            <td>{{ cve.cvss_vector }}</td>
+        </tr>
+        <tr>
+            <th>CPE</th>
+            <td>{{ cve.cpe }}</td>
+        </tr>
+        <tr>
+            <th>References</th>
+            <td>{{ cve.references_data }}</td>
+        </tr>
+    </table>
+{% endblock %}
