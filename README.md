@@ -30,7 +30,7 @@ The goal is to create a system that can:
 1. **Data Synchronization**: Pulls CVE data from the NVD API and stores it in a MySQL database.
 2. **Dynamic UI**:
    - Paginated and sortable tables for CVE data.
-   - Customizable results per page (10, 50, 100).
+   - Customizable results per page (10, 20, 50).
    - Detailed view for each CVE, showing metrics, descriptions, and references.
 3. **Flask Framework**:
    - Serves as the backbone of the application for routing, database interaction, and API handling.
