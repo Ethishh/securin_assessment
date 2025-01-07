@@ -10,8 +10,7 @@ A comprehensive web application for synchronizing, storing, and displaying CVE (
 - [Technologies Used](#technologies-used)
 - [Setup and Installation](#setup-and-installation)
 - [Screenshots](#screenshots)
-- [Future Enhancements](#future-enhancements)
-- [Acknowledgments](#acknowledgments)
+
 
 ---
 
@@ -91,3 +90,5 @@ The goal is to create a system that can:
    ```bash
    git clone https://github.com/Ethishh/securin_assessment.git
    cd securin_assessment
+
+## Screenshots
